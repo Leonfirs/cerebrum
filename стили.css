@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumar+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body, html{
+width: 100%;
+height: 100%;
+}
+
+body {
+background-color:#fafafa;
+font-family: Trebuchet MS,helvetica;
+}
+
+header {
+    width:100% ;
+    padding:10px 0,5% 0px 0,5% ;
+    background:transparent;
+    float: left;
+    position: fixed;
+}
+
+header #logo {
+color: wheat;
+cursor:pointer ;
+}
+
+header #logo span {
+    font-size: 1.7em;
+    line-height:45px;
+    margin-left:40px;
+    font-family: 'Kumar+One' serif;
+}
+
+
+@media (min-width:701px){
+    #logo {
+        float: left;
+        width:30%;
+        font-size:1.1em;
+    }
+
+    #about{
+        float: right;
+        width: 67%;
+    }
+}
+
+
+ @media (max-width: 700px) {
+    #logo {
+        margin-top:15px;
+        width:100%;
+        font-size:1.5em;
+    }
+    #about{
+        float: right;
+        width: 67%;
+    }
+}
+ #about {
+text-align:center ;
+font-size: 1em;
+line-height: 40px;
+margin-bottom:10px;
+}
+
+#about > a {color: #fff;}
+
+#about > a  :hover {color: #b0b0b0;
+text-decoration : underline;
+}
+#about > a:not(:last-child){
+  margin-right: 7%;
+}
+
+/* стили для фиксированной шапки */
+
+.fixed{
+    z-index:5000;
+    background-color:#fff;
+    border: bottom 1px solid silver;
+}
+
+
+header.fixed #logo { 
+    color:#343434;
+}
+
+.fixed #about a {color:#343434}
+.fixed #about a :hover {color:#7c7c7c}
+
+
+/* Главный блок на сайте */
+
+#top {
+    width:100%;
+    height:1000px;
+    background-image:url(https://sun9-67.userapi.com/impg/ptmVKhqCoX1YR5Wdy0dPEDFp_A66j9DuEF5ROA/0CMNKlRuO8g.jpg?size=1526x794&quality=96&sign=960b73f5c405e8689baa9cf188cd3aaa&type=album) ;
+    background-blend-mode:multiply ;
+}
